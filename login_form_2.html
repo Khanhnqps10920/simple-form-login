@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap" rel="stylesheet">
+  <title>Form Login</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    .container {
+      background: #ffffff;
+      width: 800px;
+      height: 500px;
+      border-radius: 5px;
+      box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+      margin: 120px auto;
+      display: flex;
+    }
+
+    .container .left,
+    .container .right {
+      width: 50%;
+      padding: 90px 50px;
+      text-align: center;
+    }
+
+    .form-button {
+      margin-top: 15px;
+      background: rgb(255, 64, 47);
+      outline: none;
+      padding: 15px 40px;
+      color: #fff;
+      border: none;
+      border-radius: 30px;
+    }
+
+    .form-button.secondary {
+      color: white;
+      background: transparent;
+      border: 1px solid #fff;
+    }
+
+    /* left style */
+    .left {
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px;
+    }
+
+    .left h1 {
+      font-size: 44px;
+      margin-bottom: 20px
+    }
+
+    .left .form-input {
+      background: rgb(235, 235, 235);
+      outline: none;
+      padding: 15px 10px;
+      margin-bottom: 20px;
+      border: none;
+      width: 100%;
+    }
+
+    .left p {
+      margin-top: 10px 0;
+      font-size: 16px;
+    }
+
+    /* end left style */
+
+    /* right style */
+    .right {
+      background-color: rgb(255, 57, 84);
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+      color: white;
+    }
+
+    .right h1 {
+      font-size: 44px;
+      margin-bottom: 20px
+    }
+
+    .right p {
+      margin: 30px 0;
+    }
+
+    /* end right style */
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="left">
+      <h1>Sign in</h1>
+
+      <input class="form-input" type="text" placeholder="Email">
+      <br>
+      <input class="form-input" type="password" placeholder="Password">
+
+      <p>Forgot your password?</p>
+
+      <input class="form-button" type="submit" value="SIGN IN">
+    </div>
+    <div class="right">
+      <h1>Hello, Friend!</h1>
+
+      <p>Enter your personal details and start journey with us</p>
+
+      <input class="form-button secondary" type="submit" value="SIGN UP">
+    </div>
+  </div>
+</body>
+
+</html>
